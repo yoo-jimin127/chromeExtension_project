@@ -1,3 +1,5 @@
+import adapter from 'webrtc-adapter';
+
 // background 스크립트에서만 동작 가능한 액션을 처리해주기 위해 contentscript에서 이벤트 발생 (alert로)
 chrome.runtime.sendMessage({action: "FINISH"}, function(response) {
     alert(response); //contentscript에서 이벤트 발생한 뒤 background에서 listening 진행
