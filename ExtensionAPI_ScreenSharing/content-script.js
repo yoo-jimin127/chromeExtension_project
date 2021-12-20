@@ -1,5 +1,7 @@
 // Extension App 사용으로 웹 페이지 주입 위한 파일 - Extension App과 웹 페이지 간 통신
 
+import adapter from 'webrtc-adapter';
+
 // background script와 통신 가능하도록 port 사용해 메시지 송수신
 const post = chrome.runtime.connect(chrome.runtime.id);
 prompt.onMessage.addListener(msg => {

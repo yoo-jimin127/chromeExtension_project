@@ -1,3 +1,5 @@
+import adapter from 'webrtc-adapter';
+
 const gotStream = screenStream => {
     const videoElement = document.getElementById("video");
     videoElement.src = URL.createObjectURL(screenStream);

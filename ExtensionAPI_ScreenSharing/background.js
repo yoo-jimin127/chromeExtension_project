@@ -1,4 +1,5 @@
 // 실제 Extension API - chrome.desktopCapture 사용 파일
+import adapter from 'webrtc-adapter';
 
 chrome.runtime.onConnect.addListener(port => {
     // 임의 메시지 정의
